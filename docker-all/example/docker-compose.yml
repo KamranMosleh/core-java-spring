@@ -5,7 +5,7 @@ services:
     container_name: arrowhead_core_mysql
     image: mysql:8.0
     environment:
-      - MYSQL_ROOT_PASSWORD=THIS_WILL_BE_YOUR_CONTAINERS_ROOT_PW
+      - MYSQL_ROOT_PASSWORD=root
     volumes:
       - arrowhead_core_mysql:/var/lib/mysql
       - ./sql:/docker-entrypoint-initdb.d/
