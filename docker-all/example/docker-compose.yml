@@ -3,7 +3,7 @@ version: "3"
 services:
   arrowhead_core_mysql:
     container_name: arrowhead_core_mysql
-    image: mysql:5.7
+    image: mysql:8.0
     environment:
       - MYSQL_ROOT_PASSWORD=THIS_WILL_BE_YOUR_CONTAINERS_ROOT_PW
     volumes:
